@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "bablyfill test.js",
-    "build": "es6 t index.js lib/index.js && browserify lib/index.js > bundle.js"
+    "clear": "rimraf ./dist",
+    "copy": "cp src/style.css dist && cp src/index.html dist",
+    "build": "es6 t src/index.js lib/index.js && npm run bundle",
+    "bundle": "npm run clear && mkdirp dist && browserify lib/index.js > dist/bundle.js && npm run copy"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,9 @@
   },
   "devDependencies": {
     "assert": "^1.4.1",
-    "browserify": "^14.5.0"
+    "browserify": "^14.5.0",
+    "del": "^3.0.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.2"
   }
 }

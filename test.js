@@ -9,7 +9,7 @@ const window = new JSDOM('', jsdomConfig).window;
 global.window = window;
 const document = global.document = window.document;
 
-const counter = require('./index').default;
+const counter = require('./src/index').default;
 // console.log(counter);
 
 counter.up();
