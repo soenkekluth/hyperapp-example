@@ -8,7 +8,8 @@
     "clear": "rimraf ./dist",
     "copy": "cp src/style.css dist && cp src/index.html dist",
     "build": "es6 t src/index.js lib/index.js && npm run bundle",
-    "bundle": "npm run clear && mkdirp dist && browserify lib/index.js > dist/bundle.js && npm run copy"
+    "bundle": "npm run clear && mkdirp dist && browserify lib/index.js > dist/bundle.js && npm run copy",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,14 +23,14 @@
   },
   "homepage": "https://github.com/soenkekluth/hyperapp-example#readme",
   "dependencies": {
-    "bablyfill": "^1.8.0",
-    "hyperapp": "^1.0.0",
-    "jsdom": "^11.5.1"
+    "hyperapp": "^1.0.0"
   },
   "devDependencies": {
+    "bablyfill": "^1.8.0",
+    "jsdom": "^11.5.1",
     "assert": "^1.4.1",
     "browserify": "^14.5.0",
-    "del": "^3.0.0",
+    "gh-pages": "^1.1.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2"
   }
