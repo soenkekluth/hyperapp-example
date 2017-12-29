@@ -1,0 +1,159 @@
+html {
+  line-height: 1;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Helvetica Neue, sans-serif;
+  font-smoothing: antialiased;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #00caff;
+}
+
+main {
+  border: 1px solid rgba(0, 202, 255, 0.9);
+  padding: 2em 2em 3em;
+}
+
+output,
+footer,
+h1,
+h2 {
+  display: block;
+  font-weight: 100;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+output {
+  font-size: 8em;
+}
+
+h1 {
+  font-size: 1em;
+  opacity: 0.9;
+  letter-spacing: 4px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+button {
+  background: #111;
+  border-radius: 0px;
+  border: 1px solid #00caff;
+  color: #00caff;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 0;
+  outline: none;
+  padding: 5px 15px 8px;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+button:hover,
+button:active,
+button:disabled {
+  background: #00caff;
+  color: #111;
+}
+
+button:active {
+  outline: 2px solid #00caff;
+}
+
+button:focus {
+  border: 1px solid #00caff;
+}
+
+button+button {
+  margin-left: 3px;
+}
+
+article {
+  color: #00caff;
+  font-weight: 100;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+article h2 {
+  font-size: 4em;
+}
+
+article p {
+  font-size: 2em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+article.count_up p,
+article.count_down p {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}
+
+article.count_- p {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+}
+
+footer {
+  margin-top: 1em;
+  padding-top: 1em;
+  letter-spacing: 1px;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
