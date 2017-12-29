@@ -1,0 +1,9 @@
+.vscode/**
+**/*.map
+lib/**
+flow-typed/**
+.gitignore
+.gitattributes
+.travis.yml
+.flowconfig
+npm-debug.*

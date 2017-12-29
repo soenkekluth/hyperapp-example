@@ -1,0 +1,30 @@
+{
+  "name": "hyperapp-example",
+  "version": "1.0.0",
+  "description": "hyperapp example",
+  "main": "index.js",
+  "scripts": {
+    "test": "bablyfill test.js",
+    "build": "es6 t index.js lib/index.js && browserify lib/index.js > bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soenkekluth/hyperapp-example.git"
+  },
+  "keywords": [],
+  "author": "Sönke Kluth <soenke.kluth@gmail.com> (http://soenkekluth.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soenkekluth/hyperapp-example/issues"
+  },
+  "homepage": "https://github.com/soenkekluth/hyperapp-example#readme",
+  "dependencies": {
+    "bablyfill": "^1.8.0",
+    "hyperapp": "^1.0.0",
+    "jsdom": "^11.5.1"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "browserify": "^14.5.0"
+  }
+}
