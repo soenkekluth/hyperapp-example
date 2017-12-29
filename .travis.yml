@@ -15,6 +15,7 @@ git:
 branches:
   only:
     - master
+    - /^greenkeeper/.*$/
 
 before_install:
   - nvm use $TRAVIS_NODE_VERSION
