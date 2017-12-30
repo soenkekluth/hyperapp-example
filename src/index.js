@@ -1,6 +1,5 @@
 const { h, app } = require('hyperapp');
 /** @jsx h */
-const isBrowser = typeof document !== 'undefined';
 
 const db = window.localStorage || {
   getItem: name => null,
