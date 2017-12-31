@@ -1,6 +1,10 @@
 const { h, app } = require('hyperapp');
 /** @jsx h */
 
+// const style = require('./style.css');
+
+const window = global ? global.window : window || {};
+
 const db = window.localStorage || {
   getItem: name => null,
   setItem: (name, value) => null,
@@ -84,3 +88,4 @@ const View = (state, actions) => (
 );
 
 const counter = app(state, actions, View, document.body);
+window.counter = counter;
