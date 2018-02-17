@@ -20,3 +20,6 @@ npm run build
 ```
 npm run watch
 ```
+
+## readme
+<https://medium.com/hyperapp/hyperapp-for-redux-refugees-2507c9dd1ddc>
